@@ -68,3 +68,32 @@
   background: linear-gradient(45deg, #ffafbd 30%, #ffc3a0 90%);
   color: #000
 }
+
+.main-container {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* работа с Погода онлайн */
+.main-container h4 {
+  font-size: 25px;
+  font-weight: 800;
+}
+/* работа с иконкой солнышко */
+.main-container .weather-icon i {
+  font-size: 30px;
+  font-weight: 800;
+  animation: iconanimation 3s infinite;
+}
+
+/* ключевые кадры анимации */
+@keyframes iconanimation {
+  from {
+    transform: scale(0.5,0.5);
+  }to {
+    transform: scale(1,1)
+  }
+}
