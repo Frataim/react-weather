@@ -2,37 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* работа с рамкой */
+.card {
+  /* относительное позиционирование */
+  position: relative; 
+  width: 70%;
+  height: 70%;
+  /* внешний отступ автоматически */
+  margin: auto; 
+  /* внешний отступ внизу элемента */
+  margin-bottom: 10px;
+  /* внешний отступ в верхней части элемента */
+  margin-top: 1%;
+  background: linear-gradient(45deg, #eb3349 30%, #f45c43 90%);
+  /* полностью заполняем пространства элемента */
+  background-size: cover;
+  box-shadow: 5px 10px 5px 10px #fff;
+  padding: 20px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* работа с заголовком */
+.title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.search-form {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items:center
 }
 
-.App-link {
-  color: #61dafb;
+/* работа с инпутом */
+.search-form input {
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* работа с кнопкой */
+.search-form button {
+  width: 8%;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  /* приоритет стиля */
+  border-radius: 10px !important;
+  background: linear-gradient(45deg, #8e0e00 30%, #1f1c18 90%);
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+/* hover наведения курсора на элемент */
+.search-form button:hover {
+  background: linear-gradient(45deg, #ffafbd 30%, #ffc3a0 90%);
+  color: #000
 }
