@@ -6,16 +6,7 @@ Weather - это приложение для показа однодневног
 
 <img width="1436" alt="Снимок экрана 2021-12-13 в 12 16 23" src="https://user-images.githubusercontent.com/84536810/145784814-100c0765-c628-4ac0-98c4-5d46f9c2130b.png">
 
-### Скриншот:
 
+### На проекте были использованы следующие технологии:
 
-
-#### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-##### На проекте были использованы следующие технологии:
-
-JavaScript Node Git GitHub HTML
-CSS 
+JavaScript Node Git GitHub HTML CSS 
