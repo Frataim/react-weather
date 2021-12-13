@@ -17,5 +17,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ##### На проекте были использованы следующие технологии:
 
-Java Script Node Git GitHub HTML
+JavaScript Node Git GitHub HTML
 CSS 
