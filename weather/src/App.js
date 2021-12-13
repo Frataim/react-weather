@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './App.css';
 import {getWeatherData} from './data/weather'
+import {ScaleLoader} from 'react-spinners'
 
 function App() {
   // Объявляем переменные состояния weatherdata,city,loading.
@@ -10,14 +11,20 @@ function App() {
 // получаем данные
   const getData = async () => {
     try {
+      setLoading(true)
       const data = await getWeatherData(city)
       setWeatherData(data)
-      console.log(data)
+      setLoading(false)
     } catch (error) {
       console.log(error.message)
+      setLoading(false)
     }
   }
-
+  const override = `
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+  `;
   useEffect(() => {
     getData()
   }, [])
@@ -26,9 +33,21 @@ function App() {
       <div className="card">
         <h2 className="title"><i className="fa fa-cloud"></i>Погода</h2>
         <div className="search-form">
-          <input type="text" onChange={(e) => setCity(e.target.value)} placeholder="Выберите город"/>
+          <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="Выберите город"/>
           <button type="button" onClick={() => getData()}>Поиск</button> 
         </div>
+        {loading ? (
+          <div className="loader-container">
+          <ScaleLoader
+          css={override}
+          size={200}
+          color={"#fff"}
+          loading={loading}
+          />
+          </div>
+
+        ) : (
+          <>
         {weatherdata !== null ?(
         <div className="main-container">
           <h4>Погода онлайн</h4>
@@ -47,6 +66,9 @@ function App() {
           </div>
         </div>
         ) : null}
+          </>
+        ) }
+
 
       </div>
     </div>
