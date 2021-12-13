@@ -9,4 +9,7 @@ Weather - это приложение для показа однодневног
 
 ### На проекте были использованы следующие технологии:
 
-JavaScript Node Git GitHub HTML CSS 
+[![React](https://shields.io/badge/-React-f9fbfa?logo=react&style=for-the-badge)](https://reactjs.org/)&nbsp;
+[![Java Script](https://shields.io/badge/-Java_Script-F7DF1E?logo=javascript&style=for-the-badge&logoColor=222)](https://learn.javascript.ru/) &nbsp;
+[![HTML](https://shields.io/badge/-HTML5-E34F26?logo=html5&style=for-the-badge&logoColor=fff)](https://html5book.ru/html-html5/)&nbsp;
+[![CSS](https://shields.io/badge/-CSS3-1572B6?logo=css3&style=for-the-badge&logoColor=fff)](https://html5book.ru/osnovy-css/)&nbsp;
